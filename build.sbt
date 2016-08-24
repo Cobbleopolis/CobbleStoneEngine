@@ -15,5 +15,6 @@ lazy val CobbleStoneEngine = (project in file(".")).settings(
     version := projectVersion,
     scalaVersion := scalaVer,
     libraryDependencies ++= dependencies,
-    crossPaths := false
+    crossPaths := false,
+    target in Compile in doc := baseDirectory.value / "api"
 )
