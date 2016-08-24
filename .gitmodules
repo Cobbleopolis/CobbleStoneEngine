@@ -1,0 +1,4 @@
+[submodule "api"]
+	path = api
+	url = https://github.com/Cobbleopolis/CobbleStoneEngine.git
+	branch = gh-pages
