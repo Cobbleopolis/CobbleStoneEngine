@@ -28,6 +28,11 @@ case class Vec3f(x: Float, y: Float, z: Float) {
       */
     def this(xyz: Float) = this(xyz, xyz, xyz)
 
+    /**
+      * Adds two vectors
+      * @param that
+      * @return
+      */
     def +(that: Vec3f): Vec3f = Vec3f(x)
 
 }
