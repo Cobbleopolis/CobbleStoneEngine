@@ -7,7 +7,7 @@ package com.cobble.engine.math
   * @param y The y component of the vector
   * @param z The z component of the vector
   */
-case class Vec3f(x: Float, y: Float, z: Float) {
+class Vec3f(var x: Float, var y: Float, var z: Float) {
 
     /**
       * A 3D Vector
@@ -33,16 +33,6 @@ case class Vec3f(x: Float, y: Float, z: Float) {
       * @param that The [[Vec3f]] to add
       * @return The sum of the two [[Vec3f]]s
       */
-    def +(that: Vec3f): Vec3f = Vec3f(x)
-
-}
-
-object Vec3f {
-
-    def apply(vec3f: Vec3f): Vec3f = new Vec3f(vec3f)
-
-    def apply(): Vec3f = new Vec3f()
-
-    def apply(xyz: Float): Vec3f = new Vec3f(xyz)
+    def +(that: Vec3f): Vec3f = new Vec3f(x)
 
 }
