@@ -16,5 +16,7 @@ lazy val CobbleStoneEngine = (project in file(".")).settings(
     scalaVersion := scalaVer,
     libraryDependencies ++= dependencies,
     crossPaths := false,
-    target in Compile in doc := baseDirectory.value / "api"
-)
+    ghpages.settings,
+    git.remoteRepo := "https://github.com/Cobbleopolis/CobbleStoneEngine.git",
+    siteMappings ++= Seq(file("doc/index.html") -> "index.html")
+).enablePlugins(SiteScaladocPlugin)
