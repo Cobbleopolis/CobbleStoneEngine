@@ -30,8 +30,8 @@ case class Vec3f(x: Float, y: Float, z: Float) {
 
     /**
       * Adds two vectors
-      * @param that test
-      * @return test
+      * @param that The [[Vec3f]] to add
+      * @return The sum of the two [[Vec3f]]s
       */
     def +(that: Vec3f): Vec3f = Vec3f(x)
 
