@@ -33,6 +33,6 @@ class Vec3f(var x: Float, var y: Float, var z: Float) {
       * @param that The [[Vec3f]] to add
       * @return The sum of the two [[Vec3f]]s
       */
-    def +(that: Vec3f): Vec3f = new Vec3f(x)
+    def +(that: Vec3f): Vec3f = new Vec3f(x + that.x, y + that.y, z + that.z)
 
 }
