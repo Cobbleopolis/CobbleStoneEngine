@@ -71,7 +71,7 @@ class Vec3f(var x: Float, var y: Float, var z: Float) {
       * @param that The other [[Vec3f]] in the operation.
       * @return Returns the cross product between the two [[Vec3f]]s.
       */
-    def cross(that: Vec3f): Float = ??? //TODO implement
+    def cross(that: Vec3f): Vec3f = ??? //TODO implement
 
     /**
       * Creates a string representation of a vector.
